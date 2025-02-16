@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main_box {
+    background-color: #ffffff;
+    height: 60vh;
+    width: 40vw;
+    border-radius: 35px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.main_box:hover {
+    transform: scale(1.02);
+}
+
+.amount {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#label {
+    display: block;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#amount {
+    width: 80%;
+    height: 4vh;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+#amount:focus {
+    border-color: #ff7f50;
+    box-shadow: 0 0 5px rgba(255, 127, 80, 0.5);
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.dropdown p {
+    font-weight: 600;
+    color: #444;
+    margin: 0;
+}
+
+#flg1, #flg2 {
+    padding-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#flg1:hover, #flg2:hover {
+    transform: scale(1.1);
+}
+
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.svg {
+    align-self: center;
+    height: 40px;
+    width: 40px;
+    color: #ff7f50;
+    transition: transform 0.3s;
+}
+
+.svg:hover {
+    transform: rotate(360deg);
+}
+
+.rate {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.convert {
+    background-color: #ff7f50;
+    color: #fff;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.convert:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}

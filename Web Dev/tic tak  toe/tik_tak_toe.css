@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-size: 40px 40px;
+    color: white;
+    --color: #E1E1E1;
+    background-color: #eabbbb;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 80px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #8E2DE2, #4A00E0);
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.player1,
+.player2 {
+    width: 220px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.player1 {
+    margin-left: 130px;
+    background: linear-gradient(135deg, #FF416C, #FF4B2B);
+}
+
+.player2 {
+    background: linear-gradient(135deg, #1D976C, #93F9B9);
+}
+
+/* Add Glow Effect When Active */
+.active {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.6);
+}
+
+.main_box {
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    --color: #E1E1E1;
+    background-color: #eabbbb;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+}
+
+.rows {
+    display: flex;
+    width: 500px;
+    height: 166.66px;
+    background-color: #eabbbb;
+}
+
+.boxes {
+    height: 160px;
+    width: 160px;
+    margin: 6px;
+    background-color: #F24678;
+    border-radius: 5px;
+    justify-content: center;
+
+}
+#tic {
+    height: 150px;
+    width: 150px;
+    align-self: center;
+    padding-top: 10px;
+}
+
+#tak {
+    padding-top: 10px;
+    height: 150px;
+    width: 150px;
+    align-self: center;
+}
